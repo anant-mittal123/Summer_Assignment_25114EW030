@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    char s[100];
+    int i, v = 0, c = 0;
+
+    scanf("%s", s);
+
+    for(i = 0; s[i] != '\0'; i++)
+    {
+        if(s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i]=='o' || s[i]=='u')
+            v++;
+        else
+            c++;
+    }
+
+    printf("%d\n", v);
+    printf("%d", c);
+
+    return 0;
+}
